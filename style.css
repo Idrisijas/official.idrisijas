@@ -64,13 +64,17 @@ text-shadow: 0 0 18px rgba(110,231,255,.35);
   padding: 150px 8% 80px;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
   background:
-    radial-gradient(circle at 75% 35%, rgba(255, 0, 0, 0.28), transparent 30%),
-    radial-gradient(circle at 20% 70%, rgba(245, 197, 66, 0.16), transparent 28%),
-    linear-gradient(135deg, #050505 0%, #120606 55%, #050505 100%);
+    radial-gradient(circle at 80% 20%, rgba(59,130,246,.25), transparent 28%),
+    radial-gradient(circle at 15% 80%, rgba(139,92,246,.18), transparent 30%),
+    linear-gradient(135deg, #030712 0%, #0b1120 55%, #020617 100%);
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   max-width: 780px;
 }
 
@@ -112,13 +116,13 @@ h1 {
 }
 
 .btn.primary {
-  background: #f5c542;
-  color: #050505;
+  background: linear-gradient(135deg, #6ee7ff, #8b5cf6);
+  color: #05070d;
+  box-shadow: 0 0 30px rgba(110, 231, 255, 0.25);
 }
-
 .btn.secondary {
-  border: 1px solid rgba(245, 197, 66, 0.5);
-  color: #f5c542;
+  border: 1px solid rgba(110, 231, 255, 0.45);
+  color: #6ee7ff;
 }
 
 .btn:hover {
